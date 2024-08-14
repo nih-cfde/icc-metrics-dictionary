@@ -1,0 +1,20 @@
+project:
+  type: book
+
+book:
+  title: "Dictionary of metrics for CFDE"
+  date: "last-modified"
+  chapters:
+    - index.qmd
+    - online_user.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt

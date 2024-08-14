@@ -1,0 +1,107 @@
+# Online User Behavior
+
+Understanding online user behavior helps to measure the effectiveness and impact of the Common Fund Data Ecosystem. This section provides example metrics that capture how users interact with the ecosystem's tools, websites, and APIs. By analyzing these metrics, we can gain insights into user acquisition, engagement, and behavior patterns. The metrics are organized into three key areas: User Engagement and Interaction and Behavioral Metrics. Together, these metrics offer a menu that can help teams choose how they quantify user experience and capture how users utilize the ecosystem, highlighting both the successes and potential areas for improvement.
+
+## User Engagement Metrics
+
+### Unique Users
+
+**Description**: The number of distinct individuals who interact with the ecosystem's tools, websites, or APIs over a given period.
+
+This metric provides a basic measure of reach, indicating how many unique users engage with the ecosystem. While it offers insight into the system's broad usage, it does not account for the frequency or depth of interactions. A single user with multiple accounts or devices can lead to inaccurate counts.
+
+### New Users
+
+**Description**: The number of users who interact with the ecosystem for the first time during a specific period.
+
+New users assess the ecosystem's growth and outreach efforts, helping to evaluate the effectiveness of marketing campaigns, user onboarding processes, and user acquisition strategies. However, new users do not guarantee long-term engagement or user satisfaction. Retention and conversion metrics are needed to assess the ecosystem's ability to retain and engage new users.
+
+### Returning User Ratio
+
+**Description**: The proportion of users who return to the ecosystem after their initial visit.
+
+This metric is a strong indicator of user retention and ongoing interest. A high returning user ratio suggests that users find ongoing value in the ecosystem, leading to repeated visits. However, this metric does not reveal the reasons behind the return visits—whether users are coming back for new information or because they failed to complete their tasks during previous sessions. Understanding the motivations for returning is essential for leveraging this metric effectively.
+
+### Session Duration
+
+**Description**: The average length of time a user spends interacting with the ecosystem in a single session.
+
+Session duration serves as an indicator of user engagement, suggesting how compelling or useful the content or tools are. However, longer sessions are not always indicative of positive engagement; they may also signal user difficulties in navigating or understanding the system. The challenge lies in interpreting this metric correctly—understanding whether long sessions reflect sustained interest or user frustration.
+
+### Page Views
+
+**Description**: The total number of pages or screens viewed by users across all sessions.
+
+Page views are a basic measure of activity within the ecosystem, reflecting the volume of user interactions. However, this metric does not provide insight into the quality of those interactions. High page views might indicate robust engagement, but without context, they could also suggest that users are struggling to find the information they need. Interpretation should consider the type of content and user goals. Note that page views can be influenced by factors such as site design, navigation structure, external referrals, and automated processes.
+
+### Page Views per Session
+
+**Description**: The average number of pages or screens a user views during a single session.
+
+This metric helps gauge the depth of interaction with the ecosystem, suggesting how thoroughly users are exploring the available resources. However, like session duration, this metric is subject to misinterpretation. High page views might indicate that users are finding valuable information, but it could also mean that they are struggling to locate what they need. Discerning the underlying cause requires complementary qualitative analysis.
+
+### Most Visited Pages
+
+**Description**: The pages or screens within the ecosystem that receive the highest number of views or interactions.
+
+Identifying the most visited pages helps pinpoint the content or features that are most popular among users. This information can guide decisions about content development, user interface design, and navigation improvements. However, high traffic to specific pages does not guarantee overall success; it may indicate that users are getting stuck or that other areas of the ecosystem are underutilized. Analyzing user behavior on these pages can provide valuable insights into user preferences and needs.
+
+### Bounce Rate
+
+**Description**: The percentage of single-page sessions where users leave the website or tool without further interaction.
+
+Bounce rate indicates the initial appeal or relevance of the ecosystem's landing pages or entry points. A high bounce rate may suggest that users do not find what they are looking for immediately or that the content fails to engage them. However, a low bounce rate does not always signify success; it might be the result of users getting trapped in a complex navigation system. Interpreting this metric requires a careful analysis of user intent and site structure.
+
+### Unique Page Views
+
+**Description**: The number of sessions during which a specific page or screen was viewed at least once.
+
+Unique page views offer a more refined view of user engagement, focusing on the number of distinct sessions in which a particular page or screen was accessed. This metric helps identify the popularity of specific content or features within the ecosystem. However, it does not account for the depth or duration of user interactions. A high number of unique page views may indicate broad interest or effective promotion but does not guarantee user satisfaction or task completion.
+
+
+## Interaction and Behavior Metrics
+
+### Landing Page
+
+**Description**: The first page or screen a user interacts with when they enter the ecosystem.
+
+The landing page is critical for first impressions, setting the tone for the user’s experience. High traffic on a landing page (and there can and usually will be more than one) can indicate effective outreach, but if users frequently bounce from this page, it may signal that expectations are not being met. Optimizing the landing page for clarity and relevance is essential, but the challenge lies in balancing diverse user needs and expectations.
+
+### Referer
+
+**Description**: The URL of the website or tool that directed users to the ecosystem.
+
+The referer metric provides insight into how users discover and access the ecosystem. By tracking the sources of incoming traffic, such as search engines, social media platforms, or partner websites, this metric helps evaluate the effectiveness of marketing strategies and outreach efforts. Analyzing referer data can inform decisions about content promotion, search engine optimization, and partnership development. However, it is essential to consider the quality and relevance of incoming traffic, as well as the potential for referral spam or misleading sources.
+
+### Conversion Rate
+
+**Description**: The percentage of users who complete a specific desired action (e.g., downloading data, signing up for updates) after interacting with the ecosystem.
+
+Conversion rate is a critical measure of the ecosystem's effectiveness in driving users toward specific goals. It reflects the system's ability to move users from exploration to action. However, establishing what constitutes a meaningful conversion can be challenging, and the metric may not fully capture long-term engagement or repeated use. Additionally, conversion rates can be influenced by external factors, such as user expectations or competing resources.
+
+### User Logins
+
+**Description**: The number of times users log in to the ecosystem over a given period.
+
+User logins measure active engagement by tracking how frequently users access their accounts. A higher number of logins suggests ongoing interest and interaction. However, frequent logins without corresponding activity might indicate issues with session management or user difficulties in completing tasks. The challenge is to link logins with meaningful engagement rather than just access.
+
+### Total Logged In Users
+
+**Description**: The total number of distinct users who have logged in during a specified period.
+
+This metric reflects the active user base that is accessing personalized features or tools within the ecosystem. It provides a clearer picture of engaged users compared to general traffic metrics. The challenge is to sustain and grow this base by ensuring that logged-in users find value in their interactions, encouraging ongoing engagement.
+
+### New Logged In Users
+
+**Description**: The number of users who log in for the first time during a specified period.
+
+New logged in users indicate growth in the ecosystem’s engaged user base. Tracking this metric helps assess the effectiveness of strategies aimed at converting visitors into active, logged-in users. The challenge is to convert these new users into regular, returning users by providing a compelling and seamless user experience.
+
+
+## Challenges in Evaluating Online User Behavior Metrics
+
+Evaluating metrics related to online user behavior is inherently challenging due to the variability in user intent, technical factors, and the complexity of interactions. Metrics such as session duration or page views per session can be influenced by multiple factors, making it difficult to draw definitive conclusions. Moreover, these metrics often require contextual interpretation, combining quantitative data with qualitative insights to understand user satisfaction and success.
+
+Another significant challenge is the potential for over-reliance on quantitative metrics, which may lead to an incomplete understanding of user experience. While these metrics can provide a snapshot of user behavior, they do not capture the full spectrum of user motivations, challenges, or outcomes. To address this, metrics should be complemented by user feedback, usability testing, and other qualitative methods that provide deeper insights into user needs and experiences.
+
+Finally, the dynamic nature of online environments adds complexity to metric evaluation. User behavior can change rapidly due to updates in technology, changes in user expectations, or external events. As such, ongoing monitoring and adaptation of metrics are necessary to ensure they remain relevant and accurately reflect user interactions with the ecosystem.

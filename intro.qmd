@@ -1,0 +1,21 @@
+# Operational Concerns
+
+## Federated Data Collection
+
+Metrics and evaluation within the Common Fund Data Ecosystem will rely on a federated data collection approach. This approach involves collecting data from multiple sources, including websites, applications, services, DCC and Center teams, and the NIH. In some cases, these metrics and data may be collected automatically through monitoring tools or APIs, while in other cases, manual data collection may be required. 
+
+## Common verus Individual Metrics
+
+The CFDE will need to balance the collection of common metrics that apply across the ecosystem with the need for individual metrics that capture the unique contributions and performance of specific components. Common metrics provide a standardized way to evaluate the overall impact and effectiveness of the ecosystem, while individual metrics allow for a more detailed assessment of specific projects, tools, or services.
+
+## Data Privacy and Security
+
+The collection and analysis of metrics within the CFDE will adhere to strict data privacy and security guidelines. Any personal data collected will be anonymized and aggregated to protect individual privacy and confidentiality when used in reporting. Access to sensitive data will be restricted to authorized personnel, and appropriate security measures will be implemented to prevent unauthorized access or disclosure.
+
+## Transparency and Accountability
+
+The CFDE will prioritize transparency and accountability in its metrics and evaluation processes. Data collection methods, metrics definitions, and reporting practices will be documented and made available to stakeholders to ensure clarity and consistency. Regular reporting on key performance indicators and progress towards established goals will promote accountability and facilitate data-driven decision-making.
+
+## Continuous Improvement
+
+Metrics and evaluation within the CFDE will be an ongoing process that evolves with the ecosystem. Feedback from stakeholders, user communities, and evaluation results will inform updates to metrics, data collection methods, and reporting practices. Continuous improvement efforts will ensure that the metrics used to evaluate the CFDE remain relevant, meaningful, and aligned with the ecosystem's goals and objectives.

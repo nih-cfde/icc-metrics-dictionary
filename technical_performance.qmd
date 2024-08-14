@@ -1,0 +1,36 @@
+# Website and Application Technical Performance
+
+
+The CFDE teams spend significant time and effort developing and maintaining websites and applications that comprise the CFDE ecosystem. These websites and applications serve as the primary interfaces for users to access data, tools, and resources. Providing metrics that evaluate the technical performance of these digital assets recognizes those efforts and helps identify areas for improvement.
+
+## Metrics
+
+### Page Load Time
+
+**Description**: The time it takes for a web page or application to load and display content to the user.
+
+Page load time is a critical metric for user experience, as it directly impacts user engagement and satisfaction. Slow-loading pages can lead to increased bounce rates and decreased user retention. Optimizing page load times involves various strategies, such as reducing image sizes, minimizing server requests, and leveraging caching mechanisms. Monitoring page load times across different devices and network conditions helps ensure a consistent and responsive user experience.
+
+### Uptime
+
+**Description**: The percentage of time a website or application is operational and accessible to users.
+
+Downtime can significantly impact user trust and satisfaction, especially for critical services or resources. Uptime metrics provide insights into the reliability and availability of digital assets, helping teams identify potential issues and prioritize maintenance tasks. Monitoring uptime over time can reveal patterns of instability or performance degradation, guiding efforts to enhance system resilience and minimize service disruptions.
+
+### Server Error Rate
+
+**Description**: The frequency of errors generated on the server side in response to user requests.
+
+Server errors, such as HTTP 500 responses or database connection failures, can disrupt user interactions and degrade system performance. Monitoring server error rates helps teams detect underlying issues in the back-end infrastructure, enabling timely troubleshooting and resolution. Addressing server errors promptly is essential for maintaining service quality and preventing negative user experiences.
+
+### Client Error Rate
+
+**Description**: The frequency of errors generated on the client side during user interactions with a website or application.
+
+Client errors, such as JavaScript exceptions or rendering failures, can degrade the user experience and hinder interaction with digital assets. Monitoring client error rates helps teams identify problematic areas in the front-end codebase, enabling targeted debugging and optimization efforts. Addressing client errors promptly can enhance user satisfaction and improve overall system performance.
+
+### Completed Jobs
+
+**Description**: The number of successfully completed tasks or processes initiated by users within a web application.
+
+Completed jobs reflect user engagement and interaction with the functionalities provided by a web application. Tracking completed jobs helps teams understand user behavior, usage patterns, and feature adoption rates. Analyzing completed jobs data can inform decisions about feature prioritization, usability improvements, and performance optimizations to enhance the overall user experience.
