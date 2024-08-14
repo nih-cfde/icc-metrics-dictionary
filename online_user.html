@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.55">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2&nbsp; Online User Behavior – Dictionary of metrics for CFDE</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./technical_performance.html" rel="next">
+<link href="./intro.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./online_user.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Online User Behavior</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Dictionary of metrics for CFDE</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Operational Concerns</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./online_user.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Online User Behavior</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./technical_performance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Website and Application Technical Performance</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#user-engagement-metrics" id="toc-user-engagement-metrics" class="nav-link active" data-scroll-target="#user-engagement-metrics"><span class="header-section-number">2.1</span> User Engagement Metrics</a>
+  <ul class="collapse">
+  <li><a href="#unique-users" id="toc-unique-users" class="nav-link" data-scroll-target="#unique-users"><span class="header-section-number">2.1.1</span> Unique Users</a></li>
+  <li><a href="#new-users" id="toc-new-users" class="nav-link" data-scroll-target="#new-users"><span class="header-section-number">2.1.2</span> New Users</a></li>
+  <li><a href="#returning-user-ratio" id="toc-returning-user-ratio" class="nav-link" data-scroll-target="#returning-user-ratio"><span class="header-section-number">2.1.3</span> Returning User Ratio</a></li>
+  <li><a href="#session-duration" id="toc-session-duration" class="nav-link" data-scroll-target="#session-duration"><span class="header-section-number">2.1.4</span> Session Duration</a></li>
+  <li><a href="#page-views" id="toc-page-views" class="nav-link" data-scroll-target="#page-views"><span class="header-section-number">2.1.5</span> Page Views</a></li>
+  <li><a href="#page-views-per-session" id="toc-page-views-per-session" class="nav-link" data-scroll-target="#page-views-per-session"><span class="header-section-number">2.1.6</span> Page Views per Session</a></li>
+  <li><a href="#most-visited-pages" id="toc-most-visited-pages" class="nav-link" data-scroll-target="#most-visited-pages"><span class="header-section-number">2.1.7</span> Most Visited Pages</a></li>
+  <li><a href="#bounce-rate" id="toc-bounce-rate" class="nav-link" data-scroll-target="#bounce-rate"><span class="header-section-number">2.1.8</span> Bounce Rate</a></li>
+  <li><a href="#unique-page-views" id="toc-unique-page-views" class="nav-link" data-scroll-target="#unique-page-views"><span class="header-section-number">2.1.9</span> Unique Page Views</a></li>
+  </ul></li>
+  <li><a href="#interaction-and-behavior-metrics" id="toc-interaction-and-behavior-metrics" class="nav-link" data-scroll-target="#interaction-and-behavior-metrics"><span class="header-section-number">2.2</span> Interaction and Behavior Metrics</a>
+  <ul class="collapse">
+  <li><a href="#landing-page" id="toc-landing-page" class="nav-link" data-scroll-target="#landing-page"><span class="header-section-number">2.2.1</span> Landing Page</a></li>
+  <li><a href="#referer" id="toc-referer" class="nav-link" data-scroll-target="#referer"><span class="header-section-number">2.2.2</span> Referer</a></li>
+  <li><a href="#conversion-rate" id="toc-conversion-rate" class="nav-link" data-scroll-target="#conversion-rate"><span class="header-section-number">2.2.3</span> Conversion Rate</a></li>
+  <li><a href="#user-logins" id="toc-user-logins" class="nav-link" data-scroll-target="#user-logins"><span class="header-section-number">2.2.4</span> User Logins</a></li>
+  <li><a href="#total-logged-in-users" id="toc-total-logged-in-users" class="nav-link" data-scroll-target="#total-logged-in-users"><span class="header-section-number">2.2.5</span> Total Logged In Users</a></li>
+  <li><a href="#new-logged-in-users" id="toc-new-logged-in-users" class="nav-link" data-scroll-target="#new-logged-in-users"><span class="header-section-number">2.2.6</span> New Logged In Users</a></li>
+  </ul></li>
+  <li><a href="#challenges-in-evaluating-online-user-behavior-metrics" id="toc-challenges-in-evaluating-online-user-behavior-metrics" class="nav-link" data-scroll-target="#challenges-in-evaluating-online-user-behavior-metrics"><span class="header-section-number">2.3</span> Challenges in Evaluating Online User Behavior Metrics</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Online User Behavior</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Understanding online user behavior helps to measure the effectiveness and impact of the Common Fund Data Ecosystem. This section provides example metrics that capture how users interact with the ecosystem’s tools, websites, and APIs. By analyzing these metrics, we can gain insights into user acquisition, engagement, and behavior patterns. The metrics are organized into three key areas: User Engagement and Interaction and Behavioral Metrics. Together, these metrics offer a menu that can help teams choose how they quantify user experience and capture how users utilize the ecosystem, highlighting both the successes and potential areas for improvement.</p>
+<section id="user-engagement-metrics" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="user-engagement-metrics"><span class="header-section-number">2.1</span> User Engagement Metrics</h2>
+<section id="unique-users" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="unique-users"><span class="header-section-number">2.1.1</span> Unique Users</h3>
+<p><strong>Description</strong>: The number of distinct individuals who interact with the ecosystem’s tools, websites, or APIs over a given period.</p>
+<p>This metric provides a basic measure of reach, indicating how many unique users engage with the ecosystem. While it offers insight into the system’s broad usage, it does not account for the frequency or depth of interactions. A single user with multiple accounts or devices can lead to inaccurate counts.</p>
+</section>
+<section id="new-users" class="level3" data-number="2.1.2">
+<h3 data-number="2.1.2" class="anchored" data-anchor-id="new-users"><span class="header-section-number">2.1.2</span> New Users</h3>
+<p><strong>Description</strong>: The number of users who interact with the ecosystem for the first time during a specific period.</p>
+<p>New users assess the ecosystem’s growth and outreach efforts, helping to evaluate the effectiveness of marketing campaigns, user onboarding processes, and user acquisition strategies. However, new users do not guarantee long-term engagement or user satisfaction. Retention and conversion metrics are needed to assess the ecosystem’s ability to retain and engage new users.</p>
+</section>
+<section id="returning-user-ratio" class="level3" data-number="2.1.3">
+<h3 data-number="2.1.3" class="anchored" data-anchor-id="returning-user-ratio"><span class="header-section-number">2.1.3</span> Returning User Ratio</h3>
+<p><strong>Description</strong>: The proportion of users who return to the ecosystem after their initial visit.</p>
+<p>This metric is a strong indicator of user retention and ongoing interest. A high returning user ratio suggests that users find ongoing value in the ecosystem, leading to repeated visits. However, this metric does not reveal the reasons behind the return visits—whether users are coming back for new information or because they failed to complete their tasks during previous sessions. Understanding the motivations for returning is essential for leveraging this metric effectively.</p>
+</section>
+<section id="session-duration" class="level3" data-number="2.1.4">
+<h3 data-number="2.1.4" class="anchored" data-anchor-id="session-duration"><span class="header-section-number">2.1.4</span> Session Duration</h3>
+<p><strong>Description</strong>: The average length of time a user spends interacting with the ecosystem in a single session.</p>
+<p>Session duration serves as an indicator of user engagement, suggesting how compelling or useful the content or tools are. However, longer sessions are not always indicative of positive engagement; they may also signal user difficulties in navigating or understanding the system. The challenge lies in interpreting this metric correctly—understanding whether long sessions reflect sustained interest or user frustration.</p>
+</section>
+<section id="page-views" class="level3" data-number="2.1.5">
+<h3 data-number="2.1.5" class="anchored" data-anchor-id="page-views"><span class="header-section-number">2.1.5</span> Page Views</h3>
+<p><strong>Description</strong>: The total number of pages or screens viewed by users across all sessions.</p>
+<p>Page views are a basic measure of activity within the ecosystem, reflecting the volume of user interactions. However, this metric does not provide insight into the quality of those interactions. High page views might indicate robust engagement, but without context, they could also suggest that users are struggling to find the information they need. Interpretation should consider the type of content and user goals. Note that page views can be influenced by factors such as site design, navigation structure, external referrals, and automated processes.</p>
+</section>
+<section id="page-views-per-session" class="level3" data-number="2.1.6">
+<h3 data-number="2.1.6" class="anchored" data-anchor-id="page-views-per-session"><span class="header-section-number">2.1.6</span> Page Views per Session</h3>
+<p><strong>Description</strong>: The average number of pages or screens a user views during a single session.</p>
+<p>This metric helps gauge the depth of interaction with the ecosystem, suggesting how thoroughly users are exploring the available resources. However, like session duration, this metric is subject to misinterpretation. High page views might indicate that users are finding valuable information, but it could also mean that they are struggling to locate what they need. Discerning the underlying cause requires complementary qualitative analysis.</p>
+</section>
+<section id="most-visited-pages" class="level3" data-number="2.1.7">
+<h3 data-number="2.1.7" class="anchored" data-anchor-id="most-visited-pages"><span class="header-section-number">2.1.7</span> Most Visited Pages</h3>
+<p><strong>Description</strong>: The pages or screens within the ecosystem that receive the highest number of views or interactions.</p>
+<p>Identifying the most visited pages helps pinpoint the content or features that are most popular among users. This information can guide decisions about content development, user interface design, and navigation improvements. However, high traffic to specific pages does not guarantee overall success; it may indicate that users are getting stuck or that other areas of the ecosystem are underutilized. Analyzing user behavior on these pages can provide valuable insights into user preferences and needs.</p>
+</section>
+<section id="bounce-rate" class="level3" data-number="2.1.8">
+<h3 data-number="2.1.8" class="anchored" data-anchor-id="bounce-rate"><span class="header-section-number">2.1.8</span> Bounce Rate</h3>
+<p><strong>Description</strong>: The percentage of single-page sessions where users leave the website or tool without further interaction.</p>
+<p>Bounce rate indicates the initial appeal or relevance of the ecosystem’s landing pages or entry points. A high bounce rate may suggest that users do not find what they are looking for immediately or that the content fails to engage them. However, a low bounce rate does not always signify success; it might be the result of users getting trapped in a complex navigation system. Interpreting this metric requires a careful analysis of user intent and site structure.</p>
+</section>
+<section id="unique-page-views" class="level3" data-number="2.1.9">
+<h3 data-number="2.1.9" class="anchored" data-anchor-id="unique-page-views"><span class="header-section-number">2.1.9</span> Unique Page Views</h3>
+<p><strong>Description</strong>: The number of sessions during which a specific page or screen was viewed at least once.</p>
+<p>Unique page views offer a more refined view of user engagement, focusing on the number of distinct sessions in which a particular page or screen was accessed. This metric helps identify the popularity of specific content or features within the ecosystem. However, it does not account for the depth or duration of user interactions. A high number of unique page views may indicate broad interest or effective promotion but does not guarantee user satisfaction or task completion.</p>
+</section>
+</section>
+<section id="interaction-and-behavior-metrics" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="interaction-and-behavior-metrics"><span class="header-section-number">2.2</span> Interaction and Behavior Metrics</h2>
+<section id="landing-page" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="landing-page"><span class="header-section-number">2.2.1</span> Landing Page</h3>
+<p><strong>Description</strong>: The first page or screen a user interacts with when they enter the ecosystem.</p>
+<p>The landing page is critical for first impressions, setting the tone for the user’s experience. High traffic on a landing page (and there can and usually will be more than one) can indicate effective outreach, but if users frequently bounce from this page, it may signal that expectations are not being met. Optimizing the landing page for clarity and relevance is essential, but the challenge lies in balancing diverse user needs and expectations.</p>
+</section>
+<section id="referer" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="referer"><span class="header-section-number">2.2.2</span> Referer</h3>
+<p><strong>Description</strong>: The URL of the website or tool that directed users to the ecosystem.</p>
+<p>The referer metric provides insight into how users discover and access the ecosystem. By tracking the sources of incoming traffic, such as search engines, social media platforms, or partner websites, this metric helps evaluate the effectiveness of marketing strategies and outreach efforts. Analyzing referer data can inform decisions about content promotion, search engine optimization, and partnership development. However, it is essential to consider the quality and relevance of incoming traffic, as well as the potential for referral spam or misleading sources.</p>
+</section>
+<section id="conversion-rate" class="level3" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="conversion-rate"><span class="header-section-number">2.2.3</span> Conversion Rate</h3>
+<p><strong>Description</strong>: The percentage of users who complete a specific desired action (e.g., downloading data, signing up for updates) after interacting with the ecosystem.</p>
+<p>Conversion rate is a critical measure of the ecosystem’s effectiveness in driving users toward specific goals. It reflects the system’s ability to move users from exploration to action. However, establishing what constitutes a meaningful conversion can be challenging, and the metric may not fully capture long-term engagement or repeated use. Additionally, conversion rates can be influenced by external factors, such as user expectations or competing resources.</p>
+</section>
+<section id="user-logins" class="level3" data-number="2.2.4">
+<h3 data-number="2.2.4" class="anchored" data-anchor-id="user-logins"><span class="header-section-number">2.2.4</span> User Logins</h3>
+<p><strong>Description</strong>: The number of times users log in to the ecosystem over a given period.</p>
+<p>User logins measure active engagement by tracking how frequently users access their accounts. A higher number of logins suggests ongoing interest and interaction. However, frequent logins without corresponding activity might indicate issues with session management or user difficulties in completing tasks. The challenge is to link logins with meaningful engagement rather than just access.</p>
+</section>
+<section id="total-logged-in-users" class="level3" data-number="2.2.5">
+<h3 data-number="2.2.5" class="anchored" data-anchor-id="total-logged-in-users"><span class="header-section-number">2.2.5</span> Total Logged In Users</h3>
+<p><strong>Description</strong>: The total number of distinct users who have logged in during a specified period.</p>
+<p>This metric reflects the active user base that is accessing personalized features or tools within the ecosystem. It provides a clearer picture of engaged users compared to general traffic metrics. The challenge is to sustain and grow this base by ensuring that logged-in users find value in their interactions, encouraging ongoing engagement.</p>
+</section>
+<section id="new-logged-in-users" class="level3" data-number="2.2.6">
+<h3 data-number="2.2.6" class="anchored" data-anchor-id="new-logged-in-users"><span class="header-section-number">2.2.6</span> New Logged In Users</h3>
+<p><strong>Description</strong>: The number of users who log in for the first time during a specified period.</p>
+<p>New logged in users indicate growth in the ecosystem’s engaged user base. Tracking this metric helps assess the effectiveness of strategies aimed at converting visitors into active, logged-in users. The challenge is to convert these new users into regular, returning users by providing a compelling and seamless user experience.</p>
+</section>
+</section>
+<section id="challenges-in-evaluating-online-user-behavior-metrics" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="challenges-in-evaluating-online-user-behavior-metrics"><span class="header-section-number">2.3</span> Challenges in Evaluating Online User Behavior Metrics</h2>
+<p>Evaluating metrics related to online user behavior is inherently challenging due to the variability in user intent, technical factors, and the complexity of interactions. Metrics such as session duration or page views per session can be influenced by multiple factors, making it difficult to draw definitive conclusions. Moreover, these metrics often require contextual interpretation, combining quantitative data with qualitative insights to understand user satisfaction and success.</p>
+<p>Another significant challenge is the potential for over-reliance on quantitative metrics, which may lead to an incomplete understanding of user experience. While these metrics can provide a snapshot of user behavior, they do not capture the full spectrum of user motivations, challenges, or outcomes. To address this, metrics should be complemented by user feedback, usability testing, and other qualitative methods that provide deeper insights into user needs and experiences.</p>
+<p>Finally, the dynamic nature of online environments adds complexity to metric evaluation. User behavior can change rapidly due to updates in technology, changes in user expectations, or external events. As such, ongoing monitoring and adaptation of metrics are necessary to ensure they remain relevant and accurately reflect user interactions with the ecosystem.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./intro.html" class="pagination-link" aria-label="Operational Concerns">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Operational Concerns</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./technical_performance.html" class="pagination-link" aria-label="Website and Application Technical Performance">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Website and Application Technical Performance</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
