@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Website and Application Technical Performance – Dictionary of metrics for CFDE</title>
+<title>4&nbsp; Website and Application Technical Performance – CFDE Metrics Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./online_user.html" rel="prev">
+<link href="./infrastructure_costs.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./technical_performance.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Website and Application Technical Performance</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./online_user.html">Metrics</a></li><li class="breadcrumb-item"><a href="./technical_performance.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Website and Application Technical Performance</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -95,7 +95,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Dictionary of metrics for CFDE</a> 
+      <a href="./">CFDE Metrics Handbook</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -117,18 +117,43 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Operational Concerns</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Metrics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./online_user.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Online User Behavior</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./technical_performance.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Website and Application Technical Performance</span></span></a>
+  <a href="./infrastructure_costs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Infrastructure Costs</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./technical_performance.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Website and Application Technical Performance</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">DCC Metrics</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Center Metrics</span></span>
+  </li>
     </ul>
     </div>
 </nav>
@@ -139,13 +164,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#metrics" id="toc-metrics" class="nav-link active" data-scroll-target="#metrics"><span class="header-section-number">3.1</span> Metrics</a>
+  <li><a href="#metrics" id="toc-metrics" class="nav-link active" data-scroll-target="#metrics"><span class="header-section-number">4.1</span> Metrics</a>
   <ul class="collapse">
-  <li><a href="#page-load-time" id="toc-page-load-time" class="nav-link" data-scroll-target="#page-load-time"><span class="header-section-number">3.1.1</span> Page Load Time</a></li>
-  <li><a href="#uptime" id="toc-uptime" class="nav-link" data-scroll-target="#uptime"><span class="header-section-number">3.1.2</span> Uptime</a></li>
-  <li><a href="#server-error-rate" id="toc-server-error-rate" class="nav-link" data-scroll-target="#server-error-rate"><span class="header-section-number">3.1.3</span> Server Error Rate</a></li>
-  <li><a href="#client-error-rate" id="toc-client-error-rate" class="nav-link" data-scroll-target="#client-error-rate"><span class="header-section-number">3.1.4</span> Client Error Rate</a></li>
-  <li><a href="#completed-jobs" id="toc-completed-jobs" class="nav-link" data-scroll-target="#completed-jobs"><span class="header-section-number">3.1.5</span> Completed Jobs</a></li>
+  <li><a href="#page-load-time" id="toc-page-load-time" class="nav-link" data-scroll-target="#page-load-time"><span class="header-section-number">4.1.1</span> Page Load Time</a></li>
+  <li><a href="#uptime" id="toc-uptime" class="nav-link" data-scroll-target="#uptime"><span class="header-section-number">4.1.2</span> Uptime</a></li>
+  <li><a href="#server-error-rate" id="toc-server-error-rate" class="nav-link" data-scroll-target="#server-error-rate"><span class="header-section-number">4.1.3</span> Server Error Rate</a></li>
+  <li><a href="#client-error-rate" id="toc-client-error-rate" class="nav-link" data-scroll-target="#client-error-rate"><span class="header-section-number">4.1.4</span> Client Error Rate</a></li>
+  <li><a href="#completed-jobs" id="toc-completed-jobs" class="nav-link" data-scroll-target="#completed-jobs"><span class="header-section-number">4.1.5</span> Completed Jobs</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -153,9 +178,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./online_user.html">Metrics</a></li><li class="breadcrumb-item"><a href="./technical_performance.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Website and Application Technical Performance</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Website and Application Technical Performance</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Website and Application Technical Performance</span></h1>
 </div>
 
 
@@ -173,30 +198,30 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>The CFDE teams spend significant time and effort developing and maintaining websites and applications that comprise the CFDE ecosystem. These websites and applications serve as the primary interfaces for users to access data, tools, and resources. Providing metrics that evaluate the technical performance of these digital assets recognizes those efforts and helps identify areas for improvement.</p>
-<section id="metrics" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="metrics"><span class="header-section-number">3.1</span> Metrics</h2>
-<section id="page-load-time" class="level3" data-number="3.1.1">
-<h3 data-number="3.1.1" class="anchored" data-anchor-id="page-load-time"><span class="header-section-number">3.1.1</span> Page Load Time</h3>
+<section id="metrics" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="metrics"><span class="header-section-number">4.1</span> Metrics</h2>
+<section id="page-load-time" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="page-load-time"><span class="header-section-number">4.1.1</span> Page Load Time</h3>
 <p><strong>Description</strong>: The time it takes for a web page or application to load and display content to the user.</p>
 <p>Page load time is a critical metric for user experience, as it directly impacts user engagement and satisfaction. Slow-loading pages can lead to increased bounce rates and decreased user retention. Optimizing page load times involves various strategies, such as reducing image sizes, minimizing server requests, and leveraging caching mechanisms. Monitoring page load times across different devices and network conditions helps ensure a consistent and responsive user experience.</p>
 </section>
-<section id="uptime" class="level3" data-number="3.1.2">
-<h3 data-number="3.1.2" class="anchored" data-anchor-id="uptime"><span class="header-section-number">3.1.2</span> Uptime</h3>
+<section id="uptime" class="level3" data-number="4.1.2">
+<h3 data-number="4.1.2" class="anchored" data-anchor-id="uptime"><span class="header-section-number">4.1.2</span> Uptime</h3>
 <p><strong>Description</strong>: The percentage of time a website or application is operational and accessible to users.</p>
 <p>Downtime can significantly impact user trust and satisfaction, especially for critical services or resources. Uptime metrics provide insights into the reliability and availability of digital assets, helping teams identify potential issues and prioritize maintenance tasks. Monitoring uptime over time can reveal patterns of instability or performance degradation, guiding efforts to enhance system resilience and minimize service disruptions.</p>
 </section>
-<section id="server-error-rate" class="level3" data-number="3.1.3">
-<h3 data-number="3.1.3" class="anchored" data-anchor-id="server-error-rate"><span class="header-section-number">3.1.3</span> Server Error Rate</h3>
+<section id="server-error-rate" class="level3" data-number="4.1.3">
+<h3 data-number="4.1.3" class="anchored" data-anchor-id="server-error-rate"><span class="header-section-number">4.1.3</span> Server Error Rate</h3>
 <p><strong>Description</strong>: The frequency of errors generated on the server side in response to user requests.</p>
 <p>Server errors, such as HTTP 500 responses or database connection failures, can disrupt user interactions and degrade system performance. Monitoring server error rates helps teams detect underlying issues in the back-end infrastructure, enabling timely troubleshooting and resolution. Addressing server errors promptly is essential for maintaining service quality and preventing negative user experiences.</p>
 </section>
-<section id="client-error-rate" class="level3" data-number="3.1.4">
-<h3 data-number="3.1.4" class="anchored" data-anchor-id="client-error-rate"><span class="header-section-number">3.1.4</span> Client Error Rate</h3>
+<section id="client-error-rate" class="level3" data-number="4.1.4">
+<h3 data-number="4.1.4" class="anchored" data-anchor-id="client-error-rate"><span class="header-section-number">4.1.4</span> Client Error Rate</h3>
 <p><strong>Description</strong>: The frequency of errors generated on the client side during user interactions with a website or application.</p>
 <p>Client errors, such as JavaScript exceptions or rendering failures, can degrade the user experience and hinder interaction with digital assets. Monitoring client error rates helps teams identify problematic areas in the front-end codebase, enabling targeted debugging and optimization efforts. Addressing client errors promptly can enhance user satisfaction and improve overall system performance.</p>
 </section>
-<section id="completed-jobs" class="level3" data-number="3.1.5">
-<h3 data-number="3.1.5" class="anchored" data-anchor-id="completed-jobs"><span class="header-section-number">3.1.5</span> Completed Jobs</h3>
+<section id="completed-jobs" class="level3" data-number="4.1.5">
+<h3 data-number="4.1.5" class="anchored" data-anchor-id="completed-jobs"><span class="header-section-number">4.1.5</span> Completed Jobs</h3>
 <p><strong>Description</strong>: The number of successfully completed tasks or processes initiated by users within a web application.</p>
 <p>Completed jobs reflect user engagement and interaction with the functionalities provided by a web application. Tracking completed jobs helps teams understand user behavior, usage patterns, and feature adoption rates. Analyzing completed jobs data can inform decisions about feature prioritization, usability improvements, and performance optimizations to enhance the overall user experience.</p>
 
@@ -627,8 +652,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./online_user.html" class="pagination-link" aria-label="Online User Behavior">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Online User Behavior</span></span>
+      <a href="./infrastructure_costs.html" class="pagination-link" aria-label="Infrastructure Costs">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Infrastructure Costs</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
