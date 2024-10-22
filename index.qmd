@@ -4,7 +4,19 @@ The Common Fund Data Ecosystem (CFDE) is a critical infrastructure supporting da
 As the volume of biomedical data grows, there is an increasing need for systems that not only store data but also facilitate its effective use by researchers, clinicians, and policymakers.
 
 This report examines the metrics that can quantify the impact, significance, value, and costs of the CFDE. 
-These metrics are essential for evaluating the ecosystem's contributions, including its role in advancing scientific research and collaboration, as well as its broader economic and social effects.
+The metrics listed in the [Metrics] section valuating the ecosystem's contributions, including its role in advancing scientific research and collaboration, as well as its broader economic and social effects.
 
 The proposed framework includes both qualitative and quantitative assessments to address the challenges of measuring a complex and evolving system like the CFDE. 
 By establishing clear metrics, this report aims to provide a basis for evaluating the performance of the CFDE and informing decisions about its future development and sustainability.
+
+## Why?
+
+The collection of metrics is expected to address:
+
+1. Aid in the development of a sustainability planning for CFDE components. 
+2. Need for NIH to have a clear understanding of the impact, signficance, and costs of the CFDE.
+3. Need for DCCs to demonstrate the value of their contributions to the CFDE through reporting to the NIH.
+4. Need for the CFDE to demonstrate its value to the broader scientific community.
+5. Need for the CFDE to identify areas for improvement and optimization.
+6. Aid in decision-making and resource allocation within the CFDE.
+7. Provide a basis for continuous improvement and evolution of the CFDE.

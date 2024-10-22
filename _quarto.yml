@@ -2,14 +2,18 @@ project:
   type: book
 
 book:
-  title: "Dictionary of metrics for CFDE"
+  title: "CFDE Metrics Handbook"
   date: "last-modified"
   chapters:
     - index.qmd
-    - online_user.qmd
     - intro.qmd
-    - summary.qmd
-    - references.qmd
+    - part: "Metrics"
+      chapters:
+        - online_user.qmd
+        - infrastructure_costs.qmd
+        - technical_performance.qmd
+    - part: "DCC Metrics"
+    - part: "Center Metrics"
 
 bibliography: references.bib
 
